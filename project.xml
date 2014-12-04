@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="MINT_OpenFL" package="com.example.mint_openfl" version="1.0.0" company="Company Name" />
+	<meta title="MINT_OpenFL" package="com.mintsphere.mint_openfl" version="1.0.0" company="MINTSPHERE" />
 	<app main="Main" path="Export" file="MINT_OpenFL" />
-	
+	<window background="0x333333" fps="60" orientation="landscape" fullscreen="true" if="mobile"/>
+	<window width="800" height="450" background="0x333333" fps="60" fullscreen="false" resizable="false" borderless="false" unless="mobile"/>
+
 	<source path="Source" />
 	
 	<haxelib name="openfl" />
 	
 	<assets path="Assets" rename="assets" exclude="openfl.svg" />
+	<assets path="Assets/Sounds" rename="sounds" type="sound"/>
+	<assets path="Assets/Musics" rename="musics" type="music"/>
+	<assets path="Assets/Sprites" rename="sprites"/>
+	<assets path="Assets/CGs" rename="cgs"/>
+
 	<icon path="Assets/openfl.svg" />
 	
 </project>

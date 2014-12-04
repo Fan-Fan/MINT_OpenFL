@@ -1,0 +1,12 @@
+-main ApplicationMain 
+-lib openfl
+-cp Source
+-D tools=1
+-D openfl_ver=1.0.10
+-D openfl
+-D web
+-swf-version 11
+-swf Export/flash/bin/MINT_OpenFL.swf
+-swf-header 800:450:60:FFFFFF
+-cp Export/flash/haxe
+#--remap nme:flash
